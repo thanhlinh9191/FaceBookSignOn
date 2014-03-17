@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface APP_ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *btnLogin;
+@property (weak, nonatomic) IBOutlet UITextView *twStatus;
+
+- (IBAction)clickLogin:(id)sender;
 
 @end

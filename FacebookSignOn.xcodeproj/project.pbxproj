@@ -21,6 +21,7 @@
 		330B782E18D6CAC600BF7DF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330B781018D6CAC500BF7DF7 /* UIKit.framework */; };
 		330B783618D6CAC600BF7DF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 330B783418D6CAC600BF7DF7 /* InfoPlist.strings */; };
 		330B783818D6CAC600BF7DF7 /* FacebookSignOnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 330B783718D6CAC600BF7DF7 /* FacebookSignOnTests.m */; };
+		330B784218D6CBD800BF7DF7 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330B784118D6CBD800BF7DF7 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		330B783318D6CAC600BF7DF7 /* FacebookSignOnTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FacebookSignOnTests-Info.plist"; sourceTree = "<group>"; };
 		330B783518D6CAC600BF7DF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		330B783718D6CAC600BF7DF7 /* FacebookSignOnTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FacebookSignOnTests.m; sourceTree = "<group>"; };
+		330B784118D6CBD800BF7DF7 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				330B784218D6CBD800BF7DF7 /* FacebookSDK.framework in Frameworks */,
 				330B780F18D6CAC500BF7DF7 /* CoreGraphics.framework in Frameworks */,
 				330B781118D6CAC500BF7DF7 /* UIKit.framework in Frameworks */,
 				330B780D18D6CAC500BF7DF7 /* Foundation.framework in Frameworks */,
@@ -101,6 +104,7 @@
 		330B780B18D6CAC500BF7DF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				330B784118D6CBD800BF7DF7 /* FacebookSDK.framework */,
 				330B780C18D6CAC500BF7DF7 /* Foundation.framework */,
 				330B780E18D6CAC500BF7DF7 /* CoreGraphics.framework */,
 				330B781018D6CAC500BF7DF7 /* UIKit.framework */,
@@ -377,6 +381,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/hackintosh01/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FacebookSignOn/FacebookSignOn-Prefix.pch";
 				INFOPLIST_FILE = "FacebookSignOn/FacebookSignOn-Info.plist";
@@ -390,6 +398,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/hackintosh01/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FacebookSignOn/FacebookSignOn-Prefix.pch";
 				INFOPLIST_FILE = "FacebookSignOn/FacebookSignOn-Info.plist";

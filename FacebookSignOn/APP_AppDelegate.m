@@ -9,6 +9,12 @@
 #import "APP_AppDelegate.h"
 
 @implementation APP_AppDelegate
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    
+    return [FBAppCall handleOpenURL:url sourceApplication:sourceApplication withSession:self.session];
+    
+    
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -36,6 +42,8 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    [FBAppEvents activateApp];
+    [FBAppCall handleDidBecomeActiveWithSession:self.session];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
